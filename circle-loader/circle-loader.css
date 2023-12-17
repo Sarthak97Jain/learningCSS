@@ -1,0 +1,20 @@
+body{
+    height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color: white white white transparent;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }    
+}
