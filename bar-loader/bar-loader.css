@@ -1,0 +1,174 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.bars-parent {
+    display: flex;
+    width: 50px;
+    justify-content: space-evenly;
+}
+
+.bar {
+    height: 30px;
+    width: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #118701;
+}
+
+.bar1 {
+    animation: 1.5s bar1-animate ease-in-out infinite;
+}
+
+.bar2 {
+    animation: 1.5s bar2-animate ease-in-out infinite;
+}
+
+.bar3 {
+
+    animation: 1.5s bar3-animate ease-in-out infinite;
+}
+
+@keyframes bar1-animate {
+    8% {
+        transform: scaleY(1.5);
+    }
+
+    16% {
+        transform: scaleY(1.5);
+    }
+
+    24% {
+        transform: scaleY(1.5);
+    }
+
+    32% {
+        transform: scaleY(1.5);
+    }
+
+    48% {
+        transform: scaleY(1.5)
+    }
+
+    56% {
+        transform: scaleY(1.5)
+    }
+
+    64% {
+        transform: scaleY(1.5)
+    }
+
+    72% {
+        transform: scaleY(1.5)
+    }
+
+    80% {
+        transform: scaleY(1.5)
+    }
+
+    88% {
+        transform: scaleY(1)
+    }
+
+    96% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes bar2-animate {
+    8% {
+        transform: scaleY(1);
+    }
+
+    16% {
+        transform: scaleY(1);
+    }
+
+    24% {
+        transform: scaleY(1.5);
+    }
+
+    32% {
+        transform: scaleY(1.5);
+    }
+
+    48% {
+        transform: scaleY(1.5)
+    }
+
+    56% {
+        transform: scaleY(1.5)
+    }
+
+    64% {
+        transform: scaleY(1.5)
+    }
+
+    72% {
+        transform: scaleY(1)
+    }
+
+    80% {
+        transform: scaleY(1)
+    }
+
+    88% {
+        transform: scaleY(1)
+    }
+
+    96% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes bar3-animate {
+    8% {
+        transform: scaleY(1);
+    }
+
+    16% {
+        transform: scaleY(1);
+    }
+
+    24% {
+        transform: scaleY(1);
+    }
+
+    32% {
+        transform: scaleY(1.5);
+    }
+
+    48% {
+        transform: scaleY(1.5)
+    }
+
+    56% {
+        transform: scaleY(1)
+    }
+
+    64% {
+        transform: scaleY(1)
+    }
+
+    72% {
+        transform: scaleY(1)
+    }
+
+    80% {
+        transform: scaleY(1)
+    }
+
+    88% {
+        transform: scaleY(1)
+    }
+
+    96% {
+        transform: scaleY(1)
+    }
+}

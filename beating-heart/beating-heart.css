@@ -1,0 +1,101 @@
+/* .square{
+    position: relative;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    left: 500px;
+    top: 250px;
+    transform: rotate(45deg);
+}
+.make-it-triangle{
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    height: 200px;
+    width: 290px;
+    left: 462px;
+    top: 159px;
+    z-index: 1;
+}
+.heart-top-left{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 146px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 0%;
+    top: 132px;
+}
+
+.heart-top-right{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 146px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 55%;
+    top: 132px;
+} */
+
+body{
+    height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+.heart{
+    position: relative;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg);
+    box-shadow: 10px 10px 50px -5px red;
+    animation: heart 1.2s ease  infinite;
+
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: -10px -10px 50px -5px red;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: -10px -10px 50px -5px red;
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(45deg)  scale(1);
+    }
+    20%{
+        transform: rotate(45deg)  scale(1.30); 
+    }
+    40%{
+        transform: rotate(45deg)  scale(1);
+    }
+    60%{
+        transform: rotate(45deg)  scale(1.30); 
+    }
+    80%{
+        transform: rotate(45deg) scale(1);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
+}

@@ -1,0 +1,75 @@
+/* .square{
+    position: relative;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    left: 500px;
+    top: 250px;
+    transform: rotate(45deg);
+}
+.make-it-triangle{
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    height: 200px;
+    width: 290px;
+    left: 462px;
+    top: 159px;
+    z-index: 1;
+}
+.heart-top-left{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 146px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 0%;
+    top: 132px;
+}
+
+.heart-top-right{
+    position: relative;
+    background-color: red;
+    height: 100px;
+    width: 146px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 55%;
+    top: 132px;
+} */
+
+body{
+    height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+.heart{
+    position: relative;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
